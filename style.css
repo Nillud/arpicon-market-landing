@@ -1,0 +1,522 @@
+:root {
+    --primary-color: #0065FF;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Inter-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/Inter-Bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 220px;
+}
+
+
+/* HEADER */
+
+.page-header {
+    margin-bottom: 100px;
+}
+
+.page-header .main-container {
+    position: relative;
+    padding: 40px 220px;
+}
+
+.page-header .main-container::after {
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    top: -15px;
+    right: -150px;
+    background-image: url('img/background-top.svg');
+    width: 1000px;
+    height: 981px;
+    /* transform: rotate(-141.34deg); */
+    background-size: 1028px 981px;
+    z-index: -1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-container nav ul {
+    display: flex;
+}
+
+.header-container nav ul li:not(:last-child) {
+    margin-right: 48px;
+}
+
+.header-container nav ul li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.header-phone {
+    display: block;
+    width: 250px;
+    padding: 19px 31px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    font-size: 20px;
+}
+
+
+/* SECTIONS */
+
+.page-section .title h2 {
+    margin-bottom: 60px;
+    color: #000;
+    font-family: Inter;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.page-section .title p {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+
+/* INTRO */
+
+.intro {
+    margin-bottom: 200px;
+}
+
+.intro-body {
+    display: flex;
+}
+
+.intro-body .intro-paragraph .annot {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.intro-body .intro-paragraph h1 {
+    margin-bottom: 24px;
+    color: #000;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.intro-body .intro-paragraph p {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 56px;
+    /* font-weight: bold; */
+}
+
+.intro-body .intro-paragraph button {
+    display: inline-flex;
+    height: 72px;
+    padding: 24px 61px;
+    color: #fff;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+/* Advantages */
+
+.advantages {
+    margin-bottom: 120px;
+}
+
+.advantages-body ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.advantages-body ul li {
+    border-radius: 10px;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    box-shadow: 0px 10px 40px 0px rgba(0, 101, 255, 0.05);
+    padding: 30px 20px;
+}
+
+.advantages-body ul li span {
+    margin: 12px auto;
+    display: block;
+    width: 75%;
+    text-align: center;
+    color: #718CB7;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.advantages-body ul li img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+}
+
+.advantages-body ul li h3 {
+    margin-bottom: 14px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.advantages-body ul li p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+
+/* sales-comission */
+
+.sales-comission {
+    margin-bottom: 200px;
+}
+
+.sales-comission .main-container {
+    position: relative;
+}
+
+.sales-comission .main-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: 1377px;
+    height: 383px;
+    background-image: url('img/comission-background.svg');
+    background-size: 1377px 383px;
+    z-index: -1;
+}
+
+.sales-body {
+    display: flex;
+    align-items: center;
+}
+
+.sales-body h2 {
+    margin-bottom: 0;
+    max-width: 378px;
+    margin-top: 105px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.sales-body .percentage {
+    margin-left: 272px;
+    margin-top: 78px;
+}
+
+.sales-body .percentage span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.sales-body .percentage p {
+    margin-bottom: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 320px;
+}
+
+
+/* become-seller */
+
+.become-seller {
+    margin-bottom: 120px;
+}
+
+.become-seller ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.become-seller li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.become-seller li:not(:last-child) {
+    margin-bottom: 77px;
+}
+
+.become-seller li .card-content {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.become-seller li:nth-child(2n) img {
+    order: 2;
+}
+
+.become-seller li:nth-child(2n) .card-content {
+    order: 1;
+}
+
+.become-seller li .card-content span {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8px 40px;
+    border-radius: 100px;
+    background: var(--primary-color);
+}
+
+.become-seller li .card-content h3 {
+    margin-bottom: 14px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.become-seller li .card-content p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.become-seller li .card-content p strong {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+
+/* FAQ */
+
+.faq {
+    margin-bottom: 135px;
+}
+
+.faq .main-container {
+    padding: 0 320px;
+}
+
+.accordion {
+    margin-bottom: 60px;
+}
+
+.accordion-button {
+    color: #000;
+    /* Body-text/Text-20/Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 24px;
+}
+
+.faq .faq-button {
+    margin: 0 auto;
+    display: block;
+    height: 72px;
+    padding: 24px 76px;
+    color: #fff;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+/* Questions */
+
+.questions .main-container {
+    position: relative;
+}
+
+.questions .main-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: 1500px;
+    height: 574px;
+    background-image: url('img/questions-background.svg');
+    background-size: 1500px 574px;
+    z-index: -1;
+}
+
+.questions-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions-container .questions-body {
+    margin-top: 156px;
+    max-width: 683px;
+}
+
+.questions-container .questions-body h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.questions-container .questions-body p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.questions-container form {
+    margin-top: 121px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.questions-container form input {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.questions-container form input::placeholder {
+    padding: 16px;
+    color: #9299A2;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.questions-container form button {
+    border-radius: 6px;
+    border: 2px solid #FFF;
+    padding: 19px 100px;
+    /* width: 360px; */
+    background: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
