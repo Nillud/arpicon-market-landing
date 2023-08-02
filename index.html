@@ -210,9 +210,19 @@
                     </div>
 
                     <form class="questions-form" action="#" method="post">
-                        <input type="text" placeholder="ФИО" name="fio">
-                        <input type="text" placeholder="Название организации" name="org_name">
-                        <input type="text" placeholder="Телефон" name="phone">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="fio" placeholder="ФИО" name="fio">
+                            <label for="fio">ФИО</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="org_name" class="form-control" id="org_name" placeholder="Название организации" name="org_name">
+                            <label for="org_name">Название организации</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="phone" placeholder="Телефон" name="phone">
+                            <label for="phone">Телефон</label>
+                        </div>
+
                         <button type="submit">Оставить заявку</button>
                     </form>
                 </div>
