@@ -1,4 +1,5 @@
-const form = document.getElementById('form-demo')
+const form = document.getElementById('form-market')
+const mailMes = document.querySelector('.mail-sended')
 
 // var toastElList = [].slice.call(document.querySelectorAll('.toast'))
 // var toastList = toastElList.map(function(toastEl) {
@@ -21,8 +22,23 @@ form.addEventListener('submit', async(e) => {
 
     let result = await response.json();
 
-    if(result == 'true') {
-        toastList[0].show
+    console.log(result)
+
+    if(result) {
+        // toastList[0].show
+        mailMes.classList.remove('hide')
+        mailMes.innerHTML = 'Ваш запрос отправлен!'
+
+        setTimeout(() => {
+            mailMes.classList.add('hide')
+        }, 5000)
+    } else {
+        mailMes.classList.remove('hide')
+        mailMes.innerHTML = 'Ваш запрос не отправлен'
+
+        setTimeout(() => {
+            mailMes.classList.add('hide')
+        }, 5000)
     }
 
     form.reset()

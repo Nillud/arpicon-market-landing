@@ -1,11 +1,9 @@
 <?php
-$u_persona = $_POST['name'];
-$u_address = $_POST['email'];
+$u_fio = $_POST['fio'];
+$u_org_name = $_POST['org_name'];
 $u_phone = $_POST['phone'];
-$hot_org_name = $_POST['hot_org_name'];
-$city = $_POST['city'];
 
-$body = "%0AЛифтовая: " . $hot_org_name . "%0AГород: " . $city . "%0AФИО: " . $u_persona . "%0AEmail: " . $u_address . "%0AТелефон: " . $u_phone . "";
+$body = "%0AЗапрос с Маркета: " . $u_fio . "%0AОрганизация: " . $u_org_name . "%0AТелефон: " . $u_phone . "";
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
