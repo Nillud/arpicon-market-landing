@@ -831,7 +831,7 @@ h2 {
 }
 
 .become-seller li .card-content {
-    max-width: 560px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
